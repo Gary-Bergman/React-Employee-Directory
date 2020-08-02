@@ -1,7 +1,9 @@
 import React from "react";
 import "./style.css";
+import TableData from "../TableData"
+import directory from "../../directory.json"
 
-function Table() {
+function Table(props) {
     return (
         <>
             <table class="table table-striped">
@@ -15,13 +17,19 @@ function Table() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    {/* <tr>
                         <th scope="row">TestImage1</th>
                         <td>TestName1</td>
                         <td>TestPhone1</td>
                         <td>TestEmail1</td>
                         <td>TestDOB1</td>
-                    </tr>
+                    </tr> */}
+                 
+                        {/* <th scope="row">TestImage1</th> */}
+                    {directory.map(info => <TableData name={info.name} image={info.image} phone={info.phone} email={info.email} dob={info.dob}/>)}
+                        {/* <TableData name={directory[0].name} image={friends[0].image} occupation={friends[0].occupation} location={friends[0].location}  /> */}
+                    
+              
                     {/* <tr>
                         <th scope="row">TestImage1</th>
                         <td>TestName1</td>
