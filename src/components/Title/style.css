@@ -9,5 +9,6 @@
   .jumbotron {
       background-color: darkblue;
       border-bottom: solid 10px red;
+      margin-bottom: 1em;
   }
   
