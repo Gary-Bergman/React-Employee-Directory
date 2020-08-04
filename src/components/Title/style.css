@@ -10,5 +10,6 @@
       background-color: darkblue;
       border-bottom: solid 10px red;
       margin-bottom: 1em;
+      /* min-width: 100% !important; */
   }
   

@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 
-function Search() {
+function Search(props) {
     return (
         <>
             <div className="grey">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" />
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" onChange={props.handleSearch}/>
 
                 {/* <ul id="myUL" >
                     <li><a href="#">Adele</a></li>

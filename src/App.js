@@ -1,16 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Title from "./components/Title";
 import Search from "./components/Search";
 import Table from "./components/Table";
-import directory from "./directory.json";
+import directoryJSON from "./directory.json";
 
 
 function App() {
+
+  const [directory, setDirectory] = useState({
+    all: directoryJSON,
+    filtered: directoryJSON
+  })
+
+  const findDirectory = event => {
+
+    const filtered = directory.all.filter(({ name }) =>
+      name.includes(event.target.value))
+    setDirectory({
+      ...directory,
+      filtered
+    })
+  }
+
   return (
     <>
-      <Title></Title>
-      <Search></Search>
-      <Table></Table>
+      <Title />
+      <Search handleSearch={findDirectory}/>
+      <Table directory={directory.filtered}/>
     </>
   );
 }
