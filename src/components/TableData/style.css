@@ -3,3 +3,11 @@ img {
     width: auto;
     
 }
+
+tbody.border {
+    border: 10px solid midnightblue !important;
+}
+
+th {
+    font-weight: bolder !important;
+}

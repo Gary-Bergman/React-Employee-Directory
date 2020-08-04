@@ -1,28 +1,46 @@
 import React, { useState } from "react";
 import "./style.css";
 import TableData from "../TableData"
+import { useMediaQuery } from 'react-responsive'
 
 
 function Table(props) {
+
+    const isDesktopOrLaptop = useMediaQuery(
+        { minWidth: 576 } // `device` prop
+    )
     return (
         <>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Image</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">DOB</th>
-                    </tr>
-                </thead>
-                <tbody>
-               
-                    {props.directory.map(info => <TableData key={info.id} name={info.name} image={info.image} phone={info.phone} email={info.email} dob={info.dob}/>)}
-                   
+
+            {isDesktopOrLaptop &&
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">DOB</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {props.directory.map(info => <TableData key={info.id} name={info.name} image={info.image} phone={info.phone} email={info.email} dob={info.dob} />)}
+
+
+                    </tbody>
+                </table>
+            }
+
+            {!isDesktopOrLaptop &&
+                <table class="table table-striped">
                     
-                </tbody>
-            </table>
+                    {props.directory.map(info => <TableData key={info.id} name={info.name} image={info.image} phone={info.phone} email={info.email} dob={info.dob} />)}
+
+
+           
+                </table>
+            }
         </>
 
     );
