@@ -15,7 +15,7 @@ function App() {
   const findDirectory = event => {
 
     const filtered = directory.all.filter(({ name }) =>
-      name.includes(event.target.value))
+      name.toLowerCase().includes(event.target.value))
     setDirectory({
       ...directory,
       filtered
