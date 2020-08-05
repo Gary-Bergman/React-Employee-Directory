@@ -12,6 +12,32 @@ function App() {
     filtered: directoryJSON
   })
 
+  const [sortName, setName] = useState("");
+  // const [sortYear, setYear] = useState("");
+
+  const sortByName = () => {
+
+      let sortedNames = directory.filtered.sort((a, b) => {
+      const nameA = a.name;
+      const nameB = b.name;
+
+      let comparison = 0;
+      if (nameA > nameB) {
+        comparison = 1;
+      } else if (nameA < nameB) {
+        comparison = -1;
+      } return comparison
+    })
+
+    if (sortName === "DESC") {
+      sortedNames.reverse();
+      setName("ASC");
+    } else {
+      setName("DESC")
+    }
+    setDirectory({ ...directory, sortedNames });
+  }
+
   const findDirectory = event => {
 
     const filtered = directory.all.filter(({ name }) =>
@@ -26,7 +52,7 @@ function App() {
     <>
       <Title />
       <Search handleSearch={findDirectory}/>
-      <Table directory={directory.filtered}/>
+      <Table directory={directory.filtered} sortByName={sortByName}/>
     </>
   );
 }

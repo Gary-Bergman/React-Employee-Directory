@@ -16,8 +16,8 @@ function Table(props) {
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th scope="col">Image</th>
-                            <th scope="col">Name</th>
+                            <th scope="col">Image </th>
+                            <th class="carrot" scope="col" onClick={props.sortByName}>Name</th>
                             <th scope="col">Phone</th>
                             <th scope="col">Email</th>
                             <th scope="col">DOB</th>
@@ -34,11 +34,9 @@ function Table(props) {
 
             {!isDesktopOrLaptop &&
                 <table class="table table-striped">
-                    
+
                     {props.directory.map(info => <TableData key={info.id} name={info.name} image={info.image} phone={info.phone} email={info.email} dob={info.dob} />)}
 
-
-           
                 </table>
             }
         </>
