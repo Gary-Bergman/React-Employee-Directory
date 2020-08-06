@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "http://cdn141.picsart.com/332944430064201.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic1.jpg",
     "name": "Anastasia Tazia",
     "phone": "(555)-555-5551",
     "email": "test@test.test",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "http://cdn141.picsart.com/332944885069201.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic2.jpg",
     "name": "Ronan Harold",
     "phone": "(555)-555-5552",
     "email": "test2@test.test",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "http://cdn130.picsart.com/305208493283201.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic3.jpg",
     "name": "Frank Bright",
     "phone": "(555)-555-5553",
     "email": "test3@test.test",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "image": "http://cdn141.picsart.com/250171224029202.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic4.jpg",
     "name": "Tomas Midstern",
     "phone": "(555)-555-5554",
     "email": "test4@test.test",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "image": "http://cdn130.picsart.com/281144490004201.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic5.jpg",
     "name": "Sharon Ellis",
     "phone": "(555)-555-5555",
     "email": "test5@test.test",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "image": "http://cdn141.picsart.com/332941621001201.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic6.jpg",
     "name": "Aiden Pink",
     "phone": "(555)-555-5556",
     "email": "test6@test.test",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "image": "http://cdn141.picsart.com/332943758030201.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic7.jpg",
     "name": "Joel Elient",
     "phone": "(555)-555-5557",
     "email": "test7@test.test",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "image": "http://cdn131.picsart.com/313173171105201.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic8.jpg",
     "name": "Helena Sokal",
     "phone": "(555)-555-5558",
     "email": "test8@test.test",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "image": "http://cdn130.picsart.com/331105664016201.jpg?type=webp&to=min&r=640",
+    "image": "assets/images/pic9.jpg",
     "name": "Phoebe Brokheimer",
     "phone": "(555)-555-5559",
     "email": "test9@test.test",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "image": "http://cdn19.picsart.com/98591414340.jpeg?type=webp&to=min&r=640",
+    "image": "assets/images/pic10.jpg",
     "name": "Luke Oswald",
     "phone": "(555)-555-5510",
     "email": "test10@test.test",
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "image": "http://cdn22.picsart.com/144881343001202.jpeg?type=webp&to=min&r=640",
+    "image": "assets/images/pic11.jpg",
     "name": "Kate Merose",
     "phone": "(555)-555-5511",
     "email": "test11@test.test",
