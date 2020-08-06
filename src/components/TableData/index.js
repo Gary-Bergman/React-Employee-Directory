@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 
 function TableData(props) {
     const isDesktopOrLaptop = useMediaQuery(
-        { minWidth: 576 } // `device` prop
+        { minWidth: 576 } 
     )
     return (
         <>
@@ -52,11 +52,6 @@ function TableData(props) {
                         <tr>
                             <td>{props.dob}</td>
                         </tr>
-                        {/* <tr>
-                        <br></br>
-                        <br></br>
-                        </tr> */}
-
                     </tbody>
                 </>
             }

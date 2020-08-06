@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 function Table(props) {
 
     const isDesktopOrLaptop = useMediaQuery(
-        { minWidth: 576 } // `device` prop
+        { minWidth: 576 }
     )
     return (
         <>

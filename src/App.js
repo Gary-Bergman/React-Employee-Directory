@@ -13,7 +13,6 @@ function App() {
   })
 
   const [sortName, setName] = useState("");
-  // const [sortYear, setYear] = useState("");
 
   const sortByName = () => {
 

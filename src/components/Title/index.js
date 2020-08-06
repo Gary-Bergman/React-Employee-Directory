@@ -11,7 +11,6 @@ function Title() {
                 </div>
             </div>
         </>
-
     );
 }
 
